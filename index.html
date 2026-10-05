@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Fardin Akhtar | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f9ff;
+            color: #334155;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            padding: 15px;
+            text-align: center;
+            background: #ffffff;
+            box-shadow: 0 2px 10px #dbe4f0;
+        }
+
+        nav h2 {
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+
+        span {
+            color: #2563eb;
+        }
+
+        nav a {
+            color: #334155;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        section {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        #home {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #eff6ff, #dbeafe);
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #0f172a;
+        }
+
+        h2 {
+            color: #0f172a;
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            margin-bottom: 8px;
+            color: #1e293b;
+        }
+
+        p {
+            color: #64748b;
+        }
+
+        #home h3 {
+            font-size: 21px;
+            margin: 10px;
+            color: #334155;
+        }
+
+        #home p {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 20px 5px;
+            padding: 11px 22px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-3px);
+        }
+
+        #about, #education, #certificate, #links {
+            background: #eef4fb;
+        }
+
+        .box, .card {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 25px;
+            background: white;
+            border: 1px solid #dbe4f0;
+            border-radius: 10px;
+            transition: .3s;
+            box-shadow: 0 4px 15px #e2e8f0;
+        }
+
+        .box:hover, .card:hover {
+            transform: translateY(-5px);
+            border-color: #60a5fa;
+        }
+
+        .skills, .projects, .contact {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            width: 150px;
+        }
+
+        .project {
+            width: 380px;
+            text-align: left;
+        }
+
+        .skill h3, .project h3, .contact h3 {
+            color: #2563eb;
+        }
+
+        small {
+            color: #2563eb;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 7px;
+            padding: 10px 20px;
+            color: #2563eb;
+            text-decoration: none;
+            border: 1px solid #60a5fa;
+            border-radius: 6px;
+        }
+
+        .links a:hover {
+            background: #2563eb;
+            color: white;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #0f172a;
+        }
+
+        footer p {
+            color: #cbd5e1;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            section {
+                padding: 50px 5%;
+            }
+
+            .skill, .project, .contact .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h2>MFA PORTFOLIO<span>.</span></h2>
+
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificate">Certificates</a>
+    <a href="#contact">Contact</a>
+    <a href="#links">Links</a>
+</nav>
+
+<section id="home">
+    <div>
+        <p>WELCOME TO MY PORTFOLIO</p>
+
+        <h1>Md Fardin <span>Akhtar</span></h1>
+
+        <h3>
+            BCA Student | Web Development |
+            Software Development | Cyber Security
+        </h3>
+
+        <p>
+            BCA student with knowledge of Python, Java, C, HTML, CSS,
+            JavaScript and MySQL, with hands-on experience in web
+            development, database management and Git/GitHub.
+        </p>
+
+        <a href="#projects" class="btn">View Project</a>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About <span>Me</span></h2>
+
+    <div class="box">
+        <p>
+            I am Md Fardin Akhtar, a BCA student at Jharkhand Rai
+            University, Ranchi. I have knowledge of programming,
+            web development and database management, with a keen
+            interest in software development and technology.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education / <span>Qualification</span></h2>
+
+    <div class="box">
+        <h3>Bachelor of Computer Applications (BCA)</h3>
+        <p>Jharkhand Rai University, Ranchi</p>
+        <p>3rd Year, 5th Semester</p>
+        <p>CGPA: 6.84/10 | Expected Graduation: 2027</p>
+    </div>
+
+    <div class="box">
+        <h3>Senior Secondary (CBSE)</h3>
+        <p>Rainbow Public School, Bokaro</p>
+        <p>2024 | Score: 56.2%</p>
+    </div>
+
+    <div class="box">
+        <h3>Secondary (CBSE)</h3>
+        <p>Guru Gobind Singh Public School, Bokaro</p>
+        <p>2022 | Score: 58.6%</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Technical <span>Skills</span></h2>
+
+    <div class="skills">
+        <div class="card skill"><h3>Python</h3><p>Programming</p></div>
+        <div class="card skill"><h3>C</h3><p>Programming</p></div>
+        <div class="card skill"><h3>Java</h3><p>Programming</p></div>
+        <div class="card skill"><h3>MySQL</h3><p>Database</p></div>
+        <div class="card skill"><h3>HTML</h3><p>Web</p></div>
+        <div class="card skill"><h3>CSS</h3><p>Web</p></div>
+        <div class="card skill"><h3>JavaScript</h3><p>Web</p></div>
+        <div class="card skill"><h3>Git & GitHub</h3><p>Tools</p></div>
+        <div class="card skill"><h3>VS Code</h3><p>Tool</p></div>
+        <div class="card skill"><h3>Linux</h3><p>Basic</p></div>
+        <div class="card skill"><h3>Networking</h3><p>Cyber Security</p></div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My <span>Project</span></h2>
+
+    <div class="projects">
+        <div class="card project">
+            <h3>HOTELYRA – Indian Hotel Recommendation System</h3>
+
+            <p>
+                Developed an Indian hotel recommendation system using
+                machine learning, sentiment analysis and user
+                preference-based scoring.
+            </p>
+
+            <p>
+                The system recommends suitable hotels based on
+                ratings, reviews, budget and location.
+            </p>
+
+            <small>
+                Python | ML | NLP | Flask | HTML | CSS | JavaScript | MySQL
+            </small>
+
+            <br><br>
+
+            <a href="https://github.com/mdfardinakhtar/Indian-Hotel-Recommendation-System.git"
+               target="_blank" class="btn">
+                GitHub
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="certificate">
+    <h2><span>Certifications</span></h2>
+
+    <div class="box">
+        <h3>Cyber Security</h3>
+        <p>Job-Oriented Skill Course</p>
+        <p>
+            Centre for Innovation & Entrepreneurship (CIE),
+            Jamia Millia Islamia (JMI)
+        </p>
+        <p>September 2026</p>
+    </div>
+
+    <div class="box">
+        <h3>ADCA</h3>
+        <p>Advanced Diploma in Computer Applications</p>
+        <p>STP Computer Education</p>
+        <p>August 2024 – August 2025</p>
+    </div>
+
+    <div class="box">
+        <h3>CyberX 2026 Five-Day Cybersecurity Workshop</h3>
+        <p>JRU, Ranchi</p>
+        <p>September 2026</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact <span>Me</span></h2>
+
+    <div class="contact">
+        <div class="card">
+            <h3>Email</h3>
+            <p>mdfardinakhtar05@gmail.com</p>
+        </div>
+
+        <div class="card">
+            <h3>Phone</h3>
+            <p>+91 9279744549</p>
+        </div>
+
+        <div class="card">
+            <h3>Location</h3>
+            <p>Ranchi, Jharkhand, India</p>
+        </div>
+    </div>
+</section>
+
+<section id="links">
+    <h2>Professional <span>Links</span></h2>
+
+    <div class="links">
+        <a href="https://github.com/mdfardinakhtar" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/md-fardin-akhtar-05mfa" target="_blank">LinkedIn</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Md Fardin Akhtar. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
